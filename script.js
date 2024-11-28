@@ -45,22 +45,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
         switch(sanitizedLocation) {
             case 'city':
-                document.body.style.background = "url('images/city.jpg') no-repeat center/cover fixed";
+                document.querySelector('.hero-area').style.background = "url('images/city.jpg') no-repeat center/cover";
                 break;
 
             case 'small town':
-                document.body.style.background = "url('images/small-town.jpg') no-repeat center/cover fixed";
+                document.querySelector('.hero-area').style.background = "url('images/small-town.jpg') no-repeat center/cover";
 
             case 'jungle':
-                document.body.style.background = "url('images/jungle.jpg') no-repeat center/cover fixed";
+                document.querySelector('.hero-area').style.background = "url('images/jungle.jpg') no-repeat center/cover";
                 break;
 
             case 'mountain':
-                document.body.style.background = "url('images/mountain.jpg') no-repeat center/cover fixed";
+                document.querySelector('.hero-area').style.background = "url('images/mountain.jpg') no-repeat center/cover";
                 break;
 
             default:
-                document.body.style.background = "";
+                document.querySelector('.hero-area').style.background = "";
         }
     });
 });
