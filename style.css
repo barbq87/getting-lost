@@ -13,6 +13,7 @@ header {
     display: flex;
     background-image: url("../images/header-image.jpg");
     background-size: cover;
+    background-position: bottom;
     align-items: center;
     justify-content: center;
     height: 40vh;
@@ -91,18 +92,12 @@ body.fixed-nav nav {
     transition: all 0.2s;
 }
 
-/* Need help to review the hamburger icon, it suppose to be right side */
-#main {
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-.nav-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 20px;
+/*Right-Nav*/
+#menu-trigger {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 #hamburger-icon {
@@ -177,6 +172,13 @@ body.fixed-nav nav {
 }
 
 @media(max-width: 1085px) {
+    #menu-trigger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
     nav {
         background-color: lightgray;
     }
@@ -208,10 +210,9 @@ body.fixed-nav nav {
 
 /* Hero Area */
 .hero-area {
-    background-image: url("../images/nasa.jpg");
+    background-image: url("../images/plane.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
 }
 
 #location-form {
@@ -344,6 +345,10 @@ button {
     }
 }
 
+.carousel {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
 
 /* Footer */
 footer {

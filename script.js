@@ -49,14 +49,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 break;
 
             case 'small town':
-                document.querySelector('.hero-area').style.background = "url('images/small-town.jpg') no-repeat center/cover";
+                document.querySelector('.hero-area').style.background = "url('images/town.jpg') no-repeat center/cover";
+                break;
 
-            case 'jungle':
-                document.querySelector('.hero-area').style.background = "url('images/jungle.jpg') no-repeat center/cover";
+            case 'mars':
+                document.querySelector('.hero-area').style.background = "url('images/mars.jpg') no-repeat bottom/cover";
                 break;
 
             case 'mountain':
-                document.querySelector('.hero-area').style.background = "url('images/mountain.jpg') no-repeat center/cover";
+                document.querySelector('.hero-area').style.background = "url('images/mountain.jpg') no-repeat top/cover";
                 break;
 
             default:
