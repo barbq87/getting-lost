@@ -215,6 +215,12 @@ body.fixed-nav nav {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 800px) {
+    .hero-area {
+      background-position: center;
+    }
+}
+
 #location-form {
    align-items: center;
    display: flex;
@@ -238,20 +244,7 @@ body.fixed-nav nav {
   padding: 0px 30px;
   width: calc(100% - 120px);
 }
-  
-@media (min-width: 800px) {
-  #location-type {
-    font-size: 38px;
-    width: 680px;
-  }
-}
-  
-@media (min-width: 1100px) {
-  #location-type {
-    margin: 0 25px 0 0;
-  }
-}
-  
+
 #submit-btn {
   background: #EEE8AA;
   color: #000;
@@ -265,7 +258,18 @@ body.fixed-nav nav {
   height: 65px;
 }
   
+@media (min-width: 800px) {
+  #location-type {
+    font-size: 38px;
+    width: 680px;
+  }
+}
+  
 @media (min-width: 1100px) {
+  #location-type {
+    margin: 0 25px 0 0;
+  }
+
   #submit-btn {
     font-size: 25px;
   }
