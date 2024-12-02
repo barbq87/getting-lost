@@ -29,7 +29,7 @@ function closeSideMenu() {
     sideMenu.classList.remove('show-menu');
 }
 
-//Need help to review for hero-area section, then images does not reflect after key in the keyword.
+//hero-area
 document.addEventListener("DOMContentLoaded", function() {
     // Attach an event listener to handle form submission
     const form = document.getElementById("location-form");
